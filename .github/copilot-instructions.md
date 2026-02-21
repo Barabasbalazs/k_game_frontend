@@ -29,7 +29,7 @@ tsconfig.json                       # TypeScript root config
 tsconfig.app.json                   # TypeScript app config (target: ES2022)
 tsconfig.node.json                  # TypeScript node config (target: ES2023)
 vite.config.ts                      # Vite build configuration
-yarn.lock                           # Dependency lock file (use npm, not yarn)
+yarn.lock                           # Dependency lock file (use yarn, not npm)
 ```
 
 ### Source Directory (`src/`)
@@ -54,7 +54,7 @@ src/
 ### Prerequisites
 **Always run `yarn install` before any other command** to ensure dependencies are in sync with lockfile.
 
-### Available npm Scripts
+### Available yarn Scripts
 All commands must be run from the workspace root directory.
 
 | Command | Purpose | Notes |
@@ -172,3 +172,6 @@ This document provides all necessary information for the agent to build, test, l
 ## Update Instructions
 - If you make changes to the project structure, dependencies, or build process, update this document accordingly to reflect those changes.
 - Ensure that all commands and configurations are tested and verified before updating this document.
+
+## Dependency Management
+- Always use `yarn` commands to manage dependencies, as the project uses a `yarn.lock` file. Avoid using `npm` commands to prevent lockfile conflicts.
